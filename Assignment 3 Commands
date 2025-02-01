@@ -1,0 +1,38 @@
+Assignment 3 
+Question 
+You have been asked to:
+● Create a git working directory, with the following branches
+○ Develop
+○ F1
+○ f2
+● In the master branch, commit main.txt file
+● Put develop.txt in develop branch, f1.txt and f2.txt in f1 and f2 respectively
+● Push all these branches to github
+● On local delete f2 branch
+● Delete the same branch on github as well
+
+Answer 
+Commands used
+1. mkdir git-assignment  
+2. cd git-assignment  
+3. git init  
+4. touch main.txt  
+5. git add main.txt  
+6. git commit -m "Add main.txt in main branch"  
+7. git branch develop  
+8. git branch f1  
+9. git branch f2  
+10. git switch develop  
+11. touch develop.txt  
+12. git add develop.txt  
+13. git commit -m "Add develop.txt in develop branch"  
+14. git switch f1  
+15. touch f1.txt  
+16. git add f1.txt  
+17. git commit -m "Add f1.txt in f1 branch"  
+18. git switch f2  
+19. touch f2.txt  
+20. git add f2.txt  
+21. git commit -m "Add f2.txt in f2 branch"  
+22. git remote add origin https://github.com/gaauraavkumaar/GIT.git  
+23. git push -u origin main develop f1 f2  
