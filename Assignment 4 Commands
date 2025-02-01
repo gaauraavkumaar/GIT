@@ -1,0 +1,39 @@
+Assignment 4
+Question 
+You have been asked to:
+● Put master.txt on master branch, stage and commit
+● Create 3 branches: public1, public2 and private
+● Put public1.txt on public 1 branch, stage and commit
+● Merge public 1 on master branch
+● Merge public 2 on master branch
+● Edit master.txt on private branch, stage and commit
+● Now update branch public 1 and public 2 with new master code in private
+● Also update new master code on master
+● Finally update all the code on the private branch
+
+Answer 
+Commands Used
+1.  mkdir git-project  
+2.  cd git-project  
+3.  git init  
+4.  touch master.txt  
+5.  git add master.txt  
+6.  git commit -m "Add master.txt in master branch"  
+7.  git branch public1  
+8.  git branch public2  
+9.  git branch private  
+10. git switch public1  
+11. touch public1.txt  
+12. git add public1.txt  
+13. git commit -m "Add public1.txt in public1 branch"  
+14. git switch master  
+15. git merge public1  
+16. git merge public2  
+17. git switch private  
+18. echo "Updated content" >> master.txt  
+19. git add master.txt  
+20. git commit -m "Edit master.txt in private branch"  
+21. git switch public1 && git merge private  
+22. git switch public2 && git merge private  
+23. git switch master && git merge private  
+24. git switch private && git merge master  
