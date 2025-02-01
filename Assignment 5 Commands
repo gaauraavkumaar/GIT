@@ -1,0 +1,40 @@
+Assignment 5
+Question
+● Create a gitflow workflow architecture on git
+● Create all the required branches
+● Starting from the feature branch, push the branch to the master, following the
+architecture
+● Push a urgent.txt on master using hotfix
+
+Answer
+Commands Used
+1.  mkdir gitflow-project  
+2.  cd gitflow-project  
+3.  git init  
+4.  git branch develop  
+5.  git branch release  
+6.  git branch hotfix  
+7.  git checkout develop  
+8.  git branch feature1  
+9.  git branch feature2  
+10. git checkout feature1  
+11. touch feature1.txt  
+12. git add feature1.txt  
+13. git commit -m "Add feature1.txt in feature1 branch"  
+14. git checkout develop  
+15. git merge feature1  
+16. git checkout release  
+17. git merge develop  
+18. git checkout master  
+19. git merge release  
+20. git branch hotfix-urgent  
+21. git checkout hotfix-urgent  
+22. touch urgent.txt  
+23. git add urgent.txt  
+24. git commit -m "Add urgent.txt via hotfix"  
+25. git checkout master  
+26. git merge hotfix-urgent  
+
+
+
+
