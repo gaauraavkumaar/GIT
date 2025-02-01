@@ -1,0 +1,33 @@
+Assignment 2 
+Question 
+Do the following tasks:
+● Create a git working directory with feature1.txt and feature2.txt in the master branch
+● Create 3 branches develop, feature1 and feature2
+● In develop branch create develop.txt, do not stage or commit it
+● Stash this file, and checkout to feature1 branch
+● Create new.txt file in feature1 branch, stage and commit this file
+● Checkout to develop, unstash this file and commit
+Please submit all the git commands used to do the above steps
+
+Answer 
+Commands used 
+1- mkdir git-project 
+2- cd git-project 
+3- git init 
+4- touch feature1.txt feature2.txt 
+5- git add feature1.txt feature2.txt 
+6- git commit -m "Add feature1.txt and feature2.txt" 
+7- git branch develop 
+8- git branch feature1 
+9- git branch feature2 
+10- git checkout develop 
+11- touch develop.txt 
+12- git stash 
+13- git checkout feature1 
+14- touch new.txt 
+15- git add new.txt 
+16- git commit -m "Add new.txt in feature1 branch" 
+17- git checkout develop 
+18- git stash pop # Restore develop.txt 
+19- git add develop.txt 
+20- git commit -m "Add develop.txt after unstashing"
